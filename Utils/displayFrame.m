@@ -5,7 +5,7 @@ img = imread([imageStruct.folder '/' imageStruct.name]);
 
 Colors = distinguishable_colors(size(Detectors, 1)+1);
 
-HomographyPath = (fullfile(GeneralDataPath, 'Dataset', ['Homography ' num2str(Camera) '.txt']));
+HomographyPath = (fullfile(GeneralDataPath, ['Homography ' num2str(Camera) '.txt']));
 Homography = readHomographyFile(HomographyPath);
 tform = projective2d(Homography');
 
@@ -87,9 +87,9 @@ else
                 'Parent', App.(['UIAxesCam' num2str(Camera)]));
             
             % Drow Position on Cenital Plane
-            HomographyPath = (fullfile(GeneralDataPath, 'Dataset', ['Homography ' num2str(Camera) '.txt']));
-            Homography = readHomographyFile(HomographyPath);
-            tform = projective2d(Homography');
+%             HomographyPath = (fullfile(GeneralDataPath, ['Homography ' num2str(Camera) '.txt']));
+%             Homography = readHomographyFile(HomographyPath);
+%             tform = projective2d(Homography');
             
             PointsX = Blob.x + (Blob.w/2);
             PointsY = Blob.y + Blob.h;

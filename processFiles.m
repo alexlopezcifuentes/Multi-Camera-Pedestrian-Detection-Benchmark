@@ -72,7 +72,7 @@ disp('Evaluation finished.')
 % Colours
 Colors = distinguishable_colors(30);
 
-CenitalPlane = imread(fullfile(GeneralDataPath, 'Dataset', 'RGBComplete.png'));
+CenitalPlane = imread(fullfile(GeneralDataPath, 'RGBComplete.png'));
 for i = 1 : 3
     CenitalPlane = displayFrame(i, counter, datasetFiles{1,i}(counter), app, Detectors, BlobStructure, BlobStructureGT, GeneralDataPath, CenitalPlane);
 end

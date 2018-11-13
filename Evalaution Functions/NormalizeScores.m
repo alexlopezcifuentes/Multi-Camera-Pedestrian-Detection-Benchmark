@@ -1,6 +1,6 @@
 function [ Blobs_total_people, Scores_total_people ] = NormalizeScores(Blobs_total_people_nonorm, Scores_total_people_nonorm, PD_algorithm)
 
-load(fullfile('Evalaution Functions Definitiva', 'Score Distributions', ['PDF_' PD_algorithm, '.mat']))
+load(fullfile('Evalaution Functions', 'Score Distributions', ['PDF_' PD_algorithm, '.mat']))
 NParams = size(BestD.Params, 2);
 
 if(NParams == 2)

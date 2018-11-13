@@ -1,4 +1,5 @@
 # Multi-Camera Pedestrian Detection Benchmark Application
+## Intorduction
 This application creates an interative framework to perform two different task:
 1. Evaluate at the same time different multi-camera pedestrian detection algorithms. The following measures are extracted:
     * Precision
@@ -9,7 +10,7 @@ This application creates an interative framework to perform two different task:
     * N-MODP
 2. Visualize both obtained results and ground-truth on dataset images and ground-plane.
 
-## Usage
+## Requirements
 In order to perform evaluation and visualization with the application the following files are needed:
 1. Dataset: RGB frames and homography matricies from maximum 3 different cameras. Besides, if cenital plane visualization is desired a cenital image is needed. Homography matrices should be in the following format:
     ```
@@ -51,7 +52,14 @@ An example of the needed folder and filenames structure for a 3 camera evaluatio
   
 To download this example (dataset, ground-truth, pedestrian detection files and evaluation sample) the user should run "downloadExamples.m"
 
-## Application Images
+The code has been tested on Windows Matlab 2018b
+
+## Usage
+The application has two different ways of working:
+1. Open pedestrian detection files
+
+2. Open a presaved "Evaluation.mat" file so quantitative and qualitative can be displayed without the need of performing again the evaluation.
 
 ## TODO
+- [ ] Include mean metric values in the table for each algorithm.
 - [ ] Set up application as a stand-alone framework.

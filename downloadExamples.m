@@ -17,7 +17,8 @@ outfilename = websave('Terrace Dataset.zip', ...
 'https://www.dropbox.com/s/ybunm9g0gbhtl54/Terrace%20Dataset.zip?dl=1');
 disp('Dataset downlaoded, unziping...')
 exampleFiles = unzip('Terrace Dataset.zip', 'Dataset');
-addpath('Dataset')
+p = genpath('Dataset');
+addpath(p)
 delete('Terrace Dataset.zip')
 
 % Download GT Files
