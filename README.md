@@ -53,7 +53,11 @@ An example of the needed folder and filenames structure for a 3 camera evaluatio
   * FasterRCNN_Cam3.idl
   
 ## Example
-To download this example (dataset, ground-truth, pedestrian detection files and evaluation sample) the user should run
+Download the code from the following link:
+
+[Application a1.0](https://github.com/alexlopezcifuentes/Multi-Camera-Pedestrian-Detection-Benchmark/archive/a1.0.zip)
+
+To download example files (dataset, ground-truth, pedestrian detection files and evaluation sample) the run the following script:
 
     downloadExamples.m
 
