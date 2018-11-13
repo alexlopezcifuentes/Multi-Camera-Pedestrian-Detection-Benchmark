@@ -52,6 +52,7 @@ An example of the needed folder and filenames structure for a 3 camera evaluatio
   * FasterRCNN_Cam2.idl
   * FasterRCNN_Cam3.idl
   
+## Example
 To download this example (dataset, ground-truth, pedestrian detection files and evaluation sample) the user should run
 
     downloadExamples.m
