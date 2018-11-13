@@ -1,4 +1,6 @@
 # Multi-Camera Pedestrian Detection Benchmark Application
+![Main App Interface](https://github.com/alexlopezcifuentes/Multi-Camera-Pedestrian-Detection-Benchmark/blob/master/Doc/App%20Example.png)
+
 ## Intorduction
 This application creates an interative framework to perform two different task:
 1. Evaluate at the same time different multi-camera pedestrian detection algorithms. The following measures are extracted:
@@ -50,7 +52,9 @@ An example of the needed folder and filenames structure for a 3 camera evaluatio
   * FasterRCNN_Cam2.idl
   * FasterRCNN_Cam3.idl
   
-To download this example (dataset, ground-truth, pedestrian detection files and evaluation sample) the user should run "downloadExamples.m"
+To download this example (dataset, ground-truth, pedestrian detection files and evaluation sample) the user should run
+
+    downloadExamples.m
 
 The code has been tested on Windows Matlab 2018b
 
