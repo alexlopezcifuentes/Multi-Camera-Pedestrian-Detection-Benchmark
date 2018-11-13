@@ -1,20 +1,20 @@
 # Multi-Camera Pedestrian Detection Benchmark Application
 ![Main App Interface](https://github.com/alexlopezcifuentes/Multi-Camera-Pedestrian-Detection-Benchmark/blob/master/Doc/App%20Example.png)
 
-## Intorduction
+## Introduction
 This application creates an interative framework to perform two different task:
-1. Evaluate at the same time different multi-camera pedestrian detection algorithms. The following measures are extracted:
+1. Evaluating at the same time different multi-camera pedestrian detection algorithms. The following measures are extracted:
     * Precision
     * Recall
     * F-Score
     * Area Under the Curve
     * N-MODA
     * N-MODP
-2. Visualize both obtained results and ground-truth on dataset images and ground-plane.
+2. Visualizing both obtained results and ground-truth on dataset images and ground-plane.
 
 ## Requirements
 In order to perform evaluation and visualization with the application the following files are needed:
-1. Dataset: RGB frames and homography matricies from maximum 3 different cameras. Besides, if cenital plane visualization is desired a cenital image is needed. Homography matrices should be in the following format:
+1. Dataset: RGB frames and homography matrices from maximum 3 different cameras. Besides, if cenital plane visualization is desired a cenital image is needed. Homography matrices should be in the following format:
     ```
     0.6174778372 -0.4836875683 147.00510919005 
     0.5798503075 3.8204849039 -386.096405131 
@@ -55,19 +55,19 @@ An example of the needed folder and filenames structure for a 3 camera evaluatio
 ## Example
 Download the code from the following link:
 
-[Application a1.0](https://github.com/alexlopezcifuentes/Multi-Camera-Pedestrian-Detection-Benchmark/archive/a1.0.zip)
+[Application 1.0a](https://github.com/alexlopezcifuentes/Multi-Camera-Pedestrian-Detection-Benchmark/archive/a1.0.zip)
 
-To download example files (dataset, ground-truth, pedestrian detection files and evaluation sample) the run the following script:
+To download example files (dataset, ground-truth, pedestrian detection files and evaluation sample) and to create the requiered folder structure run the following script:
 
-    downloadExamples.m
+    downloadExamples.m (1 GB)
 
 The code has been tested on Windows Matlab 2018b
 
 ## Usage
 The application has two different ways of working:
-1. Open pedestrian detection files
+1. Opening pedestrian detection files
 
-2. Open a presaved "Evaluation.mat" file so quantitative and qualitative can be displayed without the need of performing again the evaluation.
+2. Opening a presaved "Evaluation.mat" file so quantitative and qualitative can be displayed without the need of performing again the evaluation.
 
 ## TODO
 - [ ] Include mean metric values in the table for each algorithm.
