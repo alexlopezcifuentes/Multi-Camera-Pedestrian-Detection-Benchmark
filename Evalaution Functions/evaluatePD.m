@@ -19,7 +19,7 @@ fn        = zeros(size(Detectors,1), TotalCameraNumber, size(thresholds,2));
 TotalIterations = sum(cell2mat(Detectors(:,2))) * N;
 barCounter = 1;
 for k = 1 : size(Detectors,1)
-    for p = 1 : cell2mat(Detectors(k,2))
+    for p = cell2mat(Detectors(k,3))
         for j = 1 : N
             % For the first threshold get number of blobs and normalize scores
             if j == 1

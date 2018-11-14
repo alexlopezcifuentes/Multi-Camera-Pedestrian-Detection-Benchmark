@@ -12,10 +12,11 @@ close all;
 % Evaluation.mat        -> Contains a precomputed sample evaluation
 
 % Download Dataset
-disp('Downloading example dataset...')
+disp('Downloading example dataset (~1 Gb)...')
+disp('Plase wait, this process may take 2 minutes...')
 outfilename = websave('Terrace Dataset.zip', ...
 'https://www.dropbox.com/s/ybunm9g0gbhtl54/Terrace%20Dataset.zip?dl=1');
-disp('Dataset downlaoded, unziping...')
+disp('Dataset downloaded, unziping...')
 exampleFiles = unzip('Terrace Dataset.zip', 'Dataset');
 p = genpath('Dataset');
 addpath(p)
@@ -42,5 +43,4 @@ disp('Downloading example evaluation file...')
 outfilename2 = websave('Evaluation.mat', ...
     'https://drive.google.com/uc?export=download&id=17YNXhFw4nlhcbQOW5gB2kNprmPUbxr_U');
 
-% Start Graphical User Interface
-% PedestrianDetectionAPP
+disp('All files downloaded.')

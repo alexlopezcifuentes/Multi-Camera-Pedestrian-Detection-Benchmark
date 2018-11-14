@@ -107,6 +107,6 @@ if(~isempty(answer))
     save(answer{1,1}, 'BlobStructure', 'BlobStructureGT', 'Data', 'Detectors',...
         'file', 'Precision', 'Recall', 'F1Score', 'AUC', 'NMODA', 'NMODP', 'umbral');
 end
-disp(['File saved.']);
+disp('File saved.');
 end
 

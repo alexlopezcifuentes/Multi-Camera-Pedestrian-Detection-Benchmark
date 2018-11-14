@@ -1,14 +1,17 @@
 function [] = sendData2Table(Data, Detectors, App, file)
+
+% Delete zero rows
+Data( ~any(Data,2), : ) = [];
+
 % Set numbers to the table
 App.UITableResults.Data = Data;
 
 % Define row names depending on the selected files
-RowNames = cell(size(file,2), 1);
+RowNames = cell(size(Data,1), 1);
 Counter = 1;
 for i = 1 : size(Detectors,1)
-    index = cell2mat(Detectors(i,3));
-    for j = 1 : Detectors{i,2}
-        RowNames{Counter,1} = [Detectors{i,1} ' Camera ' num2str(index(j))];
+    for j = cell2mat(Detectors(i,3))
+        RowNames{Counter,1} = [Detectors{i,1} ' Camera ' num2str(j)];
         Counter = Counter + 1; 
     end
 end

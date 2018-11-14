@@ -7,7 +7,7 @@ Colors = distinguishable_colors(30);
 figure()
 Counter = 1;
 for k = 1 : size(Detectors,1)
-    for p = 1 : cell2mat(Detectors(k,2))
+    for p = cell2mat(Detectors(k,3))
         Precision_aux = squeeze(Precision(k,p,:));
         Recall_aux = squeeze(Recall(k,p,:));
 
