@@ -58,7 +58,7 @@ An example of the needed folder and filenames structure for a 3 camera evaluatio
 ## Example
 Download the code from the following link:
 
-[Application 1.0a](https://github.com/alexlopezcifuentes/Multi-Camera-Pedestrian-Detection-Benchmark/archive/a1.0.zip)
+[App 1.1-alpha](https://github.com/alexlopezcifuentes/Multi-Camera-Pedestrian-Detection-Benchmark/archive/1.1-alpha.zip)
 
 To download example files (EPFL Terrace Dataset, ground-truth, pedestrian detection files and evaluation sample) and to create the requiered folder structure run the following script:
    ```
